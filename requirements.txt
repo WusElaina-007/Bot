@@ -1,3 +1,4 @@
+fake_useragent
 requests
 beautifulsoup4
 colorama
