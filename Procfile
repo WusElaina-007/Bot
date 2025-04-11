@@ -1,1 +1,1 @@
-python autosql_bot.py
+web: python autosql_bot.py
