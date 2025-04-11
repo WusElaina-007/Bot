@@ -4,3 +4,5 @@ beautifulsoup4
 colorama
 pyfiglet
 python-telegram-bot
+termcolor
+flask
