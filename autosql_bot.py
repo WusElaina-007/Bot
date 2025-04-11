@@ -230,15 +230,3 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print(colored("\n[!] Exiting...", 'red', attrs=['bold']))
         exit(0)
-        
-import threading
-from flask import Flask
-
-def keep_alive():
-    app = Flask('')
-    @app.route('/')
-    def home():
-        return "I'm alive!"
-    app.run(host='0.0.0.0', port=8080)
-
-threading.Thread(target=keep_alive).start()
