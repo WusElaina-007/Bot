@@ -1,1 +1,1 @@
-web: python autosql_bot.py
+worker: python autosql_bot.py
