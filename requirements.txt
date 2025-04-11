@@ -1,5 +1,6 @@
 fake_useragent
 requests
+tqdm
 beautifulsoup4
 colorama
 pyfiglet
