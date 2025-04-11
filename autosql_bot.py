@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 import urllib3
 import os
+import shutil
 from termcolor import colored
 from tqdm import tqdm
 
@@ -113,7 +114,10 @@ def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def center_text(text):
-    terminal_width = os.get_terminal_size().columns
+    try:
+        terminal_width = shutil.get_terminal_size().columns
+    except:
+        terminal_width = 80
     lines = text.split('\n')
     centered_lines = []
     for line in lines:
